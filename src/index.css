@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.my-font {
+  /* font-family: 'Jost', sans-serif; */
+  font-family: 'Hanalei Fill', cursive;
+
+/* font-family: 'Qwitcher Grypen', cursive; */
+}
+
+.another-font{
+  font-family: 'Ubuntu', sans-serif;
+}
+/* .font-link {
+} */
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
