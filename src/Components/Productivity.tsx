@@ -13,9 +13,9 @@ export interface CardInfo {
 
 const Productivity = () => {
 
-    const [firstCard, setFirstCard] = useState(true)
-    const [secondCard, setSecondCard] = useState(false)
-    const [thirdCard, setThirdCard] = useState(false)
+    const [firstCard, setFirstCard] = useState<boolean>(true)
+    const [secondCard, setSecondCard] = useState<boolean>(false)
+    const [thirdCard, setThirdCard] = useState<boolean>(false)
 
 
     const cardInfo: CardInfo[] = [
