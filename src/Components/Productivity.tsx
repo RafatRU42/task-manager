@@ -49,7 +49,7 @@ const Productivity = () => {
                 <h3 className='text-xl mt-5'>Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of who’s <br /> doing what and what needs to get done. Learn more in our guide for getting started.</h3>
             </div>
             <div className='flex'>
-                <div className='w-1/3 ml-32 -mt-10'>
+                <div className='w-1/3 ml-20 -mt-10'>
 
                     <div className='grid grid-cols-1 '>
 
