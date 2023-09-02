@@ -10,7 +10,7 @@ const Navbar = () => {
   </div>
   <div className="flex-none mr-10">
     <div>
-      <Link className='text-lg another-font mr-5' to={'/makeTask'}>Make Task</Link>
+      <Link className='text-lg another-font mr-5' to={'/taskDashboard'}>Make Task</Link>
       <Link className='bg-info p-5 another-font text-lg text-white' to={'/signUp'}>Get Task Manager for Free</Link>
     </div>
 

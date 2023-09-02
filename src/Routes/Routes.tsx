@@ -4,6 +4,7 @@ import Home from '../Pages/Home'
 import Navbar from '../Pages/Navbar'
 import Task from '../Pages/Task'
 import TaskDashboard from '../TaskDashboard/TaskDashbord'
+import TaskLayout from '../Layout/TaskLayout'
 
 export const router = createBrowserRouter([
     {path:'/', element:<MainLayout></MainLayout>,children:[
@@ -11,5 +12,11 @@ export const router = createBrowserRouter([
         {path:'/navbar',element:<Navbar/>},
         {path:'/task',element:<Task></Task>}
     ]},
+
+    // Task layout =>
+
+    {path:'/taskDashboard',element:<TaskLayout></TaskLayout>,children:[
     {path:'/taskDashboard', element:<TaskDashboard></TaskDashboard>}
+
+    ]}
 ])
