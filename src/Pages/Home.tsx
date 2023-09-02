@@ -4,6 +4,7 @@ import Productivity from '../Components/Productivity'
 import Workflow from '../Components/Workflow'
 import SeeWork from './SeeWork'
 import DoMore from './DoMore'
+import Price from './Price'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Workflow></Workflow>
       <SeeWork></SeeWork>
       <DoMore></DoMore>
+      <Price></Price>
 
     </div>
   )
