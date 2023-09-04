@@ -5,7 +5,7 @@ const Price = () => {
         <div className='text-center'>
         <p className='text-5xl another-font my-4'>Task Manager priced your way</p>
         <p className='text-xl'>Trusted by millions, Trello powers teams all around the world.</p>
-        <button className='btn btn-info my-4 text-white'>Compare Plans</button>
+        <button className='btn btn-info my-4 text-white mx-auto'>Compare Plans</button>
 
         <section>
         <section className="py-6 bg-gradient-to-b from-white to-blue-100  mt-10">

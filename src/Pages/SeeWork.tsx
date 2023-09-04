@@ -7,7 +7,7 @@ const SeeWork = () => {
             <div className='text-center py-20 text-white'>
                 <p className='text-4xl font-bold font-another'>See work in a whole new way</p>
                 <p className='text-xl my-4'>View your team’s projects from every angle and bring a fresh perspective to <br /> the task at hand.</p>
-                <button className='btn '>Discover all Task Manager Views</button>
+                <button className='btn mx-auto'>Discover all Task Manager Views</button>
             </div>
             <div className='bg-white rounded-xl mx-36 flex p-10'>
                 <img className=' w-1/2' src={image} alt="" />
