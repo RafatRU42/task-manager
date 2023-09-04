@@ -6,20 +6,32 @@ import React, { Fragment } from 'react'
 
 interface MyComponentProps{
   isOpen:boolean;
-  setIsOpen:boolean
+  setIsOpen:(isOpen:boolean) => void;
+  children?: React.ReactNode
+}
+
+interface FormData{
+  name:string;
+  date:number;
+  type:string;
+  description:string;
+
 }
 
 
 
-const AddTaskModal: React.FC <MyComponentProps> = ({ isOpen, setIsOpen }) => {
+const AddTaskModal: React.FC<MyComponentProps> = ({ isOpen, setIsOpen }) => {
 
   function closeModal() {
     setIsOpen(false)
   }
 
-  const { register, handleSubmit } = useForm();
-  const onSubmit = data => {
+  const { register, handleSubmit } = useForm<FormData>();
+  const onSubmit = (data:FormData) => {
     console.log(data)
+    const name = data.name
+    console.log('first',name)
+
     closeModal()
   };
 
@@ -67,7 +79,7 @@ const AddTaskModal: React.FC <MyComponentProps> = ({ isOpen, setIsOpen }) => {
                   </div>
               </div>
 
-                  <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit((data) => onSubmit(data))}>
                     {/* register your input into the hook by invoking the "register" function */}
                     <div className="my-2">
                       <label className="block mb-2" htmlFor="name">Task Title</label>
