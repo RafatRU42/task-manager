@@ -1,4 +1,3 @@
-import React from 'react'
 import WorkflowCard from './WorkflowCard'
 import ScrollCarousel from 'scroll-carousel-react'
 

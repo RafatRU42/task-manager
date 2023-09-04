@@ -1,6 +1,5 @@
 import { CheckIcon } from '@heroicons/react/20/solid';
 import { DocumentMagnifyingGlassIcon } from '@heroicons/react/24/outline';
-import React from 'react'
 
 const MyTask = () => {
     const item = {
@@ -20,7 +19,7 @@ const MyTask = () => {
       <div className=" h-[750px] overflow-auto space-y-3">
         <div
           key={item.id}
-          className="bg-secondary/10 rounded-md p-3 flex justify-between"
+          className="bg-success rounded-md p-3 flex justify-between"
         >
           <h1>{item.title}</h1>
           <div className="flex gap-3">

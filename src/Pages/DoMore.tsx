@@ -1,31 +1,11 @@
 import image1 from '../assets/images/Integrations_Puzzle.svg'
 import image2 from '../assets/images/Gears.svg'
 import image3 from '../assets/images/Search_Value.svg'
-import DoMoreCard from '../Components/DoMoreCard'
 
 
 const DoMore = () => {
 
-    const cardInfo =[
-        {
-            id:1,
-            image:{image1},
-            title:'Integrations',
-            description:''
-        },
-        {
-            id:2,
-            image:{image2},
-            title:'',
-            description:'.'
-        },
-        {
-            id:3,
-            image:{image3},
-            title:'',
-            description:'.'
-        },
-    ]
+
     return (
         <div className='mt-40 ml-20 '>
             <p className='text-xl my-4'>POWERFUL WAYS TO GROW</p>

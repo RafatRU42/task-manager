@@ -1,6 +1,15 @@
-import React from 'react'
 
-const WorkflowCard = ({ info }) => {
+
+interface WorkFlowCardProps{
+    info:{
+        color:string;
+        name:string;
+        description:string
+    }
+}
+
+
+const WorkflowCard: React.FC<WorkFlowCardProps> = ({ info }) => {
     return (
     <div className=''>
             <div className='mr-5 '>

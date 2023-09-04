@@ -1,15 +1,9 @@
-import React from 'react'
 import { useState } from 'react'
 import image from '../assets/images/aPb1faCeYIzwD1vrFhn319LGKXQ.webp'
 import image2 from '../assets/images/download.jpg'
 import image3 from '../assets/images/download (1).jpg'
 
 
-export interface CardInfo {
-    id: number,
-    title: string,
-    description: string
-}
 
 const Productivity = () => {
 
@@ -18,25 +12,7 @@ const Productivity = () => {
     const [thirdCard, setThirdCard] = useState<boolean>(false)
 
 
-    const cardInfo: CardInfo[] = [
-        {
-            id: 1,
-            title: 'Boards',
-            description: ''
-
-        },
-        {
-            id: 2,
-            title: 'Lists',
-            description: ''
-        },
-        {
-            id: 3,
-            title: 'Cards',
-            description: 'Whatever the project or process, boards keep tasks organized and work moving forward. In a glance you can see everything from "things to do" to "aww yeah we did it!"'
-        }
-    ]
-
+   
 
 
 
@@ -55,7 +31,7 @@ const Productivity = () => {
 
                         {/* First Card */}
 
-                        <div onClick={()=> setFirstCard(true) & setSecondCard(false) & setThirdCard(false)} className='group my-2 cursor-pointer'>
+                        <div onClick={()=> {setFirstCard(true);  setSecondCard(false);  setThirdCard(false);}} className='group my-2 cursor-pointer'>
                             <div className="rounded bg-base-100 shadow-xl group-hover:scale-110 duration-300">
                                 <div className="card-body">
                                     <h2 className="card-title">Boards</h2>
@@ -67,7 +43,7 @@ const Productivity = () => {
 
                         {/* Second Card */}
 
-                        <div onClick={() =>setFirstCard(false) & setSecondCard(true) & setThirdCard(false)} className='group my-2 cursor-pointer'>
+                        <div onClick={() =>{setFirstCard(false) ; setSecondCard(true) ; setThirdCard(false);}} className='group my-2 cursor-pointer'>
                             <div className="rounded bg-base-100 shadow-xl group-hover:scale-110 duration-300">
                                 <div className="card-body">
                                     <h2 className="card-title">Lists</h2>
@@ -79,7 +55,7 @@ const Productivity = () => {
 
                         {/* Third Card */}
 
-                        <div onClick={()=> setThirdCard(true) & setFirstCard(false) & setSecondCard(false)} className='group my-2 cursor-pointer'>
+                        <div onClick={()=> {setThirdCard(true) ; setFirstCard(false) ; setSecondCard(false);}} className='group my-2 cursor-pointer'>
                             <div className="rounded bg-base-100 shadow-xl group-hover:scale-110 duration-300">
                                 <div className="card-body">
                                     <h2 className="card-title">Cards</h2>
