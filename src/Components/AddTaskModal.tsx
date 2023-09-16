@@ -4,10 +4,12 @@ import { Dialog, Transition } from '@headlessui/react'
 import React, { Fragment } from 'react'
 
 
+
 interface MyComponentProps{
   isOpen:boolean;
   setIsOpen:(isOpen:boolean) => void;
   children?: React.ReactNode
+  refetch:() => void;
 }
 
 interface FormData{
@@ -20,22 +22,53 @@ interface FormData{
 
 
 
-const AddTaskModal: React.FC<MyComponentProps> = ({ isOpen, setIsOpen }) => {
+const AddTaskModal: React.FC<MyComponentProps> = ({ isOpen, setIsOpen, refetch }) => {
+
 
   function closeModal() {
     setIsOpen(false)
   }
 
-  const { register, handleSubmit } = useForm<FormData>();
+
+
+  const { register, handleSubmit, reset } = useForm<FormData>();
   const onSubmit = (data:FormData) => {
-    console.log(data)
-    const name = data.name
-    console.log('first',name)
 
-    closeModal()
-  };
+    const name = data.name;
+    const date = data.date;
+    const type = data.type;
+    const description = data.description;
+    const state= 'to do'
+
+    const taskInfo = {
+      name,
+      date,
+      type,
+      description,
+      state,
+    }
+
+    fetch('http://localhost:5000/addTask',{
+      method:'POST',
+      headers: {'content-type' : 'application/json'},
+      body:JSON.stringify(taskInfo)
+    })
+    .then(res => res.json())
+    .then(data => {
+      // alert('data is posted to mongodb')
+      console.log('first',data)
+    })
+  .catch(error=> console.log(error))
+
+  refetch()
+
+    reset()
+  closeModal()
 
 
+  }
+
+  
 
   return (
     <div>
