@@ -4,11 +4,13 @@ import Home from '../Pages/Home'
 import Navbar from '../Pages/Navbar'
 import TaskDashboard from '../TaskDashboard/TaskDashbord'
 import TaskLayout from '../Layout/TaskLayout'
+import Automate from '../Pages/Automate'
 
 export const router = createBrowserRouter([
     {path:'/', element:<MainLayout></MainLayout>,children:[
         {path:'/',element:<Home></Home>},
         {path:'/navbar',element:<Navbar/>},
+        {path:'/automate',element:<Automate></Automate>},
         // {path:'/task',element:<Task></Task>}
     ]},
 

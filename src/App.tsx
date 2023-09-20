@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import Navbar from "./Pages/Navbar"
 import TaskLayout from "./Layout/TaskLayout"
 import TaskDashboard from "./TaskDashboard/TaskDashbord"
+import Automate from "./Pages/Automate"
 
 
 
@@ -17,8 +18,11 @@ function App() {
           <Routes>
             {/* Main Layout */}
             <Route path='/' element= {<MainLayout></MainLayout>}>
+
               <Route index element={<Home></Home>}/>
               <Route path="navbar" element={<Navbar></Navbar>} />
+              <Route path="automate" element={<Automate></Automate>} />
+              
             </Route>
 
             {/* Task Layout */}

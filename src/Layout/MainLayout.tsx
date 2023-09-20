@@ -5,9 +5,11 @@ import Footer from '../Pages/Footer'
 const MainLayout = () => {
   return (
     <div>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
+      <div className=''>
         <Outlet></Outlet>
-        <Footer></Footer>
+      </div>
+      <Footer></Footer>
     </div>
   )
 }

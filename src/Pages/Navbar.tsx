@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='relative'>
-      <div className="navbar fixed top-0 right-0 left-0 bg-base-100 shadow-xl">
+    <div className=''>
+      <div className="navbar   bg-base-100 shadow-xl">
         <div className="flex-1">
           <Link to={'/'} className="btn btn-ghost normal-case text-xl another-font">Task Manager</Link>
         </div>
         <div className="flex-none mr-10">
           <div>
+            <Link className='text-lg another-font mr-5' to={'/automate'}>Automate</Link>
             <Link className='text-lg another-font mr-5' to={'/taskDashboard'}>Make Task</Link>
             <Link className='bg-info p-5 another-font text-lg text-white' to={'/signUp'}>Get Task Manager for Free</Link>
           </div>
