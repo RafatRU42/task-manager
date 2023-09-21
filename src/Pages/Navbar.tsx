@@ -9,6 +9,8 @@ const Navbar = () => {
         </div>
         <div className="flex-none mr-10">
           <div>
+            <Link className='text-lg another-font mr-5' to={'/'}>Home</Link>
+            <Link className='text-lg another-font mr-5' to={'/marketing'}>Marketing</Link>
             <Link className='text-lg another-font mr-5' to={'/views'}>Views</Link>
             <Link className='text-lg another-font mr-5' to={'/automate'}>Automate</Link>
             <Link className='text-lg another-font mr-5' to={'/taskDashboard'}>Make Task</Link>

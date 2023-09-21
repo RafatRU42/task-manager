@@ -6,6 +6,7 @@ import TaskLayout from "./Layout/TaskLayout"
 import TaskDashboard from "./TaskDashboard/TaskDashbord"
 import Automate from "./Pages/Automate"
 import Views from "./Pages/Views"
+import Marketing from "./Pages/Marketing"
 
 
 
@@ -24,7 +25,7 @@ function App() {
               <Route path="navbar" element={<Navbar></Navbar>} />
               <Route path="automate" element={<Automate></Automate>} />
               <Route path="views" element={<Views></Views>}></Route>
-              <Route path="marketing" element={}/>
+              <Route path="marketing" element={<Marketing/>}/>
               
             </Route>
 

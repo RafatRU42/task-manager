@@ -26,7 +26,7 @@ const ActionCardLI: React.FC<CardInfoProps> = ({ info }) => {
 
                 <div>
                     {
-                        buttonText && <button className='btn btn-ghost -ml-4 text-xl mt-4'>+ {buttonText}</button>
+                        buttonText && <button className='btn btn-link text-info -ml-4 text-xl mt-4'>+ {buttonText}</button>
                     }
                 </div>
             </div>
