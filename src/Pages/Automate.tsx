@@ -29,13 +29,14 @@ const Automate = () => {
             {/* Section 2 */}
             <section className="text-center my-10">
                 <h1 className="text-4xl  font-bold mb-10">Create rules, buttons, and commands to  automate <br /> almost any action in Task Manager.</h1>
-                <img className="mx-auto" src={image} alt="" />
+                <img className="mx-auto hidden md:flex" src={image} alt="" />
             </section>
 
             {/* Action Card Section */}
             <section>
                 <ActionCards></ActionCards>
             </section>
+
         </div>
     )
 }
