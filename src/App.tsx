@@ -24,6 +24,7 @@ function App() {
               <Route path="navbar" element={<Navbar></Navbar>} />
               <Route path="automate" element={<Automate></Automate>} />
               <Route path="views" element={<Views></Views>}></Route>
+              <Route path="marketing" element={}/>
               
             </Route>
 
