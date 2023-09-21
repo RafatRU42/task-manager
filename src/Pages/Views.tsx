@@ -24,9 +24,16 @@ const Views = () => {
       </section>
 
       {/* Views Card Section */}
-      <section className='m-20'>
-        <h1 className='text-4xl font-semibold text-center'>See what views can do for you</h1>
+      <section className=''>
+        <h1 className='text-4xl font-semibold hidden md:grid text-center'>See what views can do for you</h1>
         <ViewCards></ViewCards>
+      </section>
+
+      {/* Ready section */}
+      <section className='text-center bg-gradient-to-b from-cyan-200 to-white'>
+        <h1 className='text-4xl font-semibold pt-20'>Bring powerful new views to your team’s work</h1>
+        <h4 className='text-xl font-semibold my-6'>Start a free trial today</h4>
+        <button className='btn btn-info btn-outline mb-10 mx-auto'>I'm ready</button>
       </section>
     </div>
   )
