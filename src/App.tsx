@@ -7,6 +7,7 @@ import TaskDashboard from "./TaskDashboard/TaskDashbord"
 import Automate from "./Pages/Automate"
 import Views from "./Pages/Views"
 import Marketing from "./Pages/Marketing"
+import FirstPage from "./Pages/FirstPage"
 
 
 
@@ -18,6 +19,8 @@ function App() {
     <div>
        <BrowserRouter>
           <Routes>
+          <Route path="welcome" element={<FirstPage/>}></Route>
+
             {/* Main Layout */}
             <Route path='/' element= {<MainLayout></MainLayout>}>
 

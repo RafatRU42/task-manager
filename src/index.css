@@ -25,6 +25,15 @@
 .another-font{
   font-family: 'Ubuntu', sans-serif;
 }
+
+.styled-font{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.styled-font2{
+  font-family: 'Caveat', cursive;
+}
+
 /* .font-link {
 } */
 
