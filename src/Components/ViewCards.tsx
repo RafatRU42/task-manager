@@ -1,6 +1,6 @@
 import image1 from '../assets/images/viewC1.svg'
 import image2 from '../assets/images/viewC2.svg'
-import image3 from '../assets/images/viewC3.svg'
+import image3 from '../assets/images/viewC7.svg'
 import image4 from '../assets/images/viewC4.svg'
 import image5 from '../assets/images/viewC5.svg'
 import image6 from '../assets/images/viewC6.svg'
