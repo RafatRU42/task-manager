@@ -13,6 +13,7 @@ import Create from "./Components/Create"
 import ResoursesLayout from "./Layout/ResoursesLayout"
 import Onboard from "./Pages/Onboard"
 import Integrate from "./Pages/Integrate"
+import ScreenLayout from "./Layout/ScreenLayout"
 
 
 
@@ -24,7 +25,9 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="welcome" element={<FirstPage />}></Route>
+          <Route path="welcome" element={<ScreenLayout />}>
+            <Route index element={<FirstPage/>}></Route>
+          </Route>
 
           {/* Main Layout */}
           <Route path='/' element={<MainLayout></MainLayout>}>
