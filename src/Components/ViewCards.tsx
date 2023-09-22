@@ -1,6 +1,5 @@
 import image1 from '../assets/images/viewC1.svg'
 import image2 from '../assets/images/viewC2.svg'
-import image3 from '../assets/images/viewC7.svg'
 import image4 from '../assets/images/viewC4.svg'
 import image5 from '../assets/images/viewC5.svg'
 import image6 from '../assets/images/viewC6.svg'
@@ -29,7 +28,7 @@ const ViewCards = () => {
     title:'Use Calendar to stay on top of tasks',
     text:'Start each day without any surprises. Whether scheduling a quarterly editorial calendar or staying on top of your to-dos, Calendar is like a crystal ball giving you a clear vision of what work lies ahead. Sync any third party calendars to maintain the perfect work-life balance.',
     buttonText:'Learn more about Calendar view',
-    image:image3
+    image:image6
   }
   const cardInfo4 ={
     id:4,
