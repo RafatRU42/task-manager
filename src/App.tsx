@@ -46,8 +46,8 @@ function App() {
           </Route>
 
           {/* Screen Layout */}
-          <Route path="welcome" element={<ScreenLayout />}>
-            <Route index element={<FirstPage/>}></Route>
+          <Route path="welcome" element={<ScreenLayout></ScreenLayout>}>
+            <Route index element={<FirstPage></FirstPage>}></Route>
           </Route>
 
 

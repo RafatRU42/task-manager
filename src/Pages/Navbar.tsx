@@ -10,6 +10,7 @@ const Navbar = () => {
         <div className="flex-none mr-10">
           <div>
             <Link className='text-lg another-font mr-5' to={'/'}>Home</Link>
+            <Link className='text-lg another-font mr-5' to={'/welcome'}>wel</Link>
             <Link className='text-lg another-font mr-5' to={'/resourses'}>Resourses</Link>
             <Link className='text-lg another-font mr-5' to={'/marketing'}>Marketing</Link>
             <Link className='text-lg another-font mr-5' to={'/views'}>Views</Link>
