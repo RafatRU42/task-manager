@@ -1,4 +1,3 @@
-import React from 'react'
 import image1 from '../assets/images/viewC1.svg'
 import image2 from '../assets/images/viewC2.svg'
 import image3 from '../assets/images/viewC3.svg'

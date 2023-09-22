@@ -31,7 +31,7 @@ const TaskDashboard = () => {
   console.log('fir',toDo)
 
   return (
-    <div className="h-screen grid grid-cols-12">
+    <div className="h-screen grid grid-cols-12 ">
       <div className="col-span-9 px-10 pt-10">
         <div className="flex justify-between items-center">
           <div>

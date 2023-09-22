@@ -1,4 +1,4 @@
-
+import image from '../assets/images/banner.webp'
 const Banner = () => {
     return (
         <div>
@@ -10,7 +10,8 @@ const Banner = () => {
 
                 </div>
                 <div className='w-1/2'>
-                    <img src="https://i.ibb.co/p3L9dbw/business-man-working-on-computer-at-office-desk-vector-14995840-removebg-preview.png" alt="" />
+                    <img className='h-[95%]' src={image} alt="" />
+                    {/* "https://i.ibb.co/p3L9dbw/business-man-working-on-computer-at-office-desk-vector-14995840-removebg-preview.png" */}
 
                 </div>
             </div>

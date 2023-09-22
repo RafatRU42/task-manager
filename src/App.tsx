@@ -11,6 +11,8 @@ import FirstPage from "./Pages/FirstPage"
 import Learn from "./Components/Learn"
 import Create from "./Components/Create"
 import ResoursesLayout from "./Layout/ResoursesLayout"
+import Onboard from "./Pages/Onboard"
+import Integrate from "./Pages/Integrate"
 
 
 
@@ -39,6 +41,8 @@ function App() {
           <Route path="resourses" element={<ResoursesLayout></ResoursesLayout>}>
             <Route index element={<Learn></Learn>} />
             <Route path="/resourses/create" element={<Create></Create>} />
+            <Route path="/resourses/onboard" element={<Onboard></Onboard>} />
+            <Route path="/resourses/integrate" element={<Integrate></Integrate>} />
           </Route>
 
           {/* Task Layout */}

@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../Pages/Navbar'
 import ResoursesLN from '../Components/ResoursesLN'
 import { Outlet } from 'react-router-dom'
@@ -11,7 +10,7 @@ const ResoursesLayout = () => {
             <div className='w-1/4 '>
                 <ResoursesLN></ResoursesLN>
             </div>
-            <div className='w-3/4 m-20 pt-16'>
+            <div className='w-3/4 mx-20 mt-10 pt-16'>
                 <Outlet></Outlet>
             </div>
         </div>
@@ -19,4 +18,4 @@ const ResoursesLayout = () => {
   )
 }
 
-export default ResoursesLayout
+export default ResoursesLayout;
