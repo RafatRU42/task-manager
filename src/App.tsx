@@ -25,10 +25,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="welcome" element={<ScreenLayout />}>
-            <Route index element={<FirstPage/>}></Route>
-          </Route>
-
+    
           {/* Main Layout */}
           <Route path='/' element={<MainLayout></MainLayout>}>
 
@@ -47,6 +44,12 @@ function App() {
             <Route path="/resourses/onboard" element={<Onboard></Onboard>} />
             <Route path="/resourses/integrate" element={<Integrate></Integrate>} />
           </Route>
+
+          {/* Screen Layout */}
+          <Route path="welcome" element={<ScreenLayout />}>
+            <Route index element={<FirstPage/>}></Route>
+          </Route>
+
 
           {/* Task Layout */}
           <Route path="taskDashboard" element={<TaskLayout></TaskLayout>}>
