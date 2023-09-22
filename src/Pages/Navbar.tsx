@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className=''>
-      <div className="navbar   bg-base-100 shadow-xl">
+      <div className="navbar fixed bg-base-100 shadow-xl">
         <div className="flex-1">
           <Link to={'/'} className="btn btn-ghost normal-case text-xl another-font">Task Manager</Link>
         </div>
         <div className="flex-none mr-10">
           <div>
             <Link className='text-lg another-font mr-5' to={'/'}>Home</Link>
+            <Link className='text-lg another-font mr-5' to={'/resourses'}>Resourses</Link>
             <Link className='text-lg another-font mr-5' to={'/marketing'}>Marketing</Link>
             <Link className='text-lg another-font mr-5' to={'/views'}>Views</Link>
             <Link className='text-lg another-font mr-5' to={'/automate'}>Automate</Link>

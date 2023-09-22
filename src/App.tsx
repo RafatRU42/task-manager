@@ -8,6 +8,9 @@ import Automate from "./Pages/Automate"
 import Views from "./Pages/Views"
 import Marketing from "./Pages/Marketing"
 import FirstPage from "./Pages/FirstPage"
+import Learn from "./Components/Learn"
+import Create from "./Components/Create"
+import ResoursesLayout from "./Layout/ResoursesLayout"
 
 
 
@@ -17,27 +20,33 @@ function App() {
 
   return (
     <div>
-       <BrowserRouter>
-          <Routes>
-          <Route path="welcome" element={<FirstPage/>}></Route>
+      <BrowserRouter>
+        <Routes>
+          <Route path="welcome" element={<FirstPage />}></Route>
 
-            {/* Main Layout */}
-            <Route path='/' element= {<MainLayout></MainLayout>}>
+          {/* Main Layout */}
+          <Route path='/' element={<MainLayout></MainLayout>}>
 
-              <Route index element={<Home></Home>}/>
-              <Route path="navbar" element={<Navbar></Navbar>} />
-              <Route path="automate" element={<Automate></Automate>} />
-              <Route path="views" element={<Views></Views>}></Route>
-              <Route path="marketing" element={<Marketing/>}/>
-              
-            </Route>
+            <Route index element={<Home></Home>} />
+            <Route path="navbar" element={<Navbar></Navbar>} />
+            <Route path="automate" element={<Automate></Automate>} />
+            <Route path="views" element={<Views></Views>}></Route>
+            <Route path="marketing" element={<Marketing />} />
 
-            {/* Task Layout */}
-            <Route path="taskDashboard" element={<TaskLayout></TaskLayout>}>
-              <Route index element={<TaskDashboard></TaskDashboard>} />
-            </Route>
-          </Routes>
-       </BrowserRouter>
+          </Route>
+
+          {/* Resourses Layout */}
+          <Route path="resourses" element={<ResoursesLayout></ResoursesLayout>}>
+            <Route index element={<Learn></Learn>} />
+            <Route path="/resourses/create" element={<Create></Create>} />
+          </Route>
+
+          {/* Task Layout */}
+          <Route path="taskDashboard" element={<TaskLayout></TaskLayout>}>
+            <Route index element={<TaskDashboard></TaskDashboard>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
