@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import refetchReducer from "./ModalSlice";
+// import refetchReducer from "./ModalSlice";
 
 export const store = configureStore({
     reducer:{
-        refetch: refetchReducer
+        // refetch: refetchReducer
     }
 })
 

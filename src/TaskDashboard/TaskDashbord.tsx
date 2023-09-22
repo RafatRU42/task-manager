@@ -22,7 +22,7 @@ const TaskDashboard = () => {
 
 
 
-  const { data:toDo = [], refetch, isLoading} = useQuery({
+  const { data:toDo = [], refetch} = useQuery({
     queryKey:['ToDo'],
     queryFn: () => fetch(`http://localhost:5000/getTask`)
     .then(res => res.json())

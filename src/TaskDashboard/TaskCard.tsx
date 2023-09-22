@@ -22,7 +22,7 @@ const TaskCard:React.FC <TaskCardProps> = ({task}) => {
       }
       return res.json();
     })
-    .then(data => {})
+    .then(() => {})
     .catch(error => console.log('error',error))
    
   }
@@ -40,7 +40,7 @@ const TaskCard:React.FC <TaskCardProps> = ({task}) => {
       <p>{task?.date}</p>
       <div className="flex gap-3">
         <button
-        onClick={()=>handleDelete(task._id)}
+        onClick={()=>handleDelete()}
         >
           <TrashIcon className="h-5 w-5 text-red-500" />
         </button>

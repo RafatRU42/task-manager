@@ -1,24 +1,24 @@
-import {createSlice,PayloadAction} from '@reduxjs/toolkit'
+// import {createSlice} from '@reduxjs/toolkit'
 
-interface RefetchState{
-    refetchFunction: (() => void) | null;
-}
+// interface RefetchState{
+//     refetchFunction: (() => void) | null;
+// }
 
-const initialState:RefetchState ={
-    refetchFunction:null
-}
+// const initialState:RefetchState ={
+//     refetchFunction:null
+// }
 
 
-const refetchlSlice = createSlice({
-    name:'refetch',
-    initialState,
-    reducers:{
-        refetchByModal:(state,action)=>{
-            state.refetchFunction= action.payload
-        }
-    }
+// const refetchlSlice = createSlice({
+//     name:'refetch',
+//     initialState,
+//     reducers:{
+//         refetchByModal:(state,action)=>{
+//             state.refetchFunction= action.payload
+//         }
+//     }
 
-})
+// })
 
-export const {refetchByModal} = refetchlSlice.actions
-export default refetchlSlice.reducer
+// export const {refetchByModal} = refetchlSlice.actions
+// export default refetchlSlice.reducer
