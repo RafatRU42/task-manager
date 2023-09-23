@@ -11,11 +11,11 @@ const Navbar = () => {
           <div>
             <Link className='text-lg another-font mr-5' to={'/home'}>Home</Link>
             <Link className='text-lg another-font mr-5' to={'/resourses'}>Resourses</Link>
-            <Link className='text-lg another-font mr-5' to={'/marketing'}>Marketing</Link>
-            <Link className='text-lg another-font mr-5' to={'/views'}>Views</Link>
-            <Link className='text-lg another-font mr-5' to={'/automate'}>Automate</Link>
+            <Link className='text-lg another-font mr-5' to={'/home/marketing'}>Marketing</Link>
+            <Link className='text-lg another-font mr-5' to={'/home/views'}>Views</Link>
+            <Link className='text-lg another-font mr-5' to={'/home/automate'}>Automate</Link>
             <Link className='text-lg another-font mr-5' to={'/taskDashboard'}>Make Task</Link>
-            <Link className='bg-info p-5 another-font text-lg text-white' to={'/signUp'}>Get Task Manager for Free</Link>
+            <Link className='bg-info p-5 another-font text-lg text-white' to={'/home/signUp'}>Get Task Manager for Free</Link>
           </div>
 
           {/* {
@@ -41,7 +41,7 @@ const Navbar = () => {
     'Login'
     } */}
 
-          <Link className='another-font mx-4 text-lg' to={'/login'}>Login</Link>
+          <Link className='another-font mx-4 text-lg' to={'/home/login'}>Login</Link>
 
         </div>
       </div>

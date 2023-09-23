@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { SquaresPlusIcon, ChatBubbleOvalLeftEllipsisIcon,Cog6ToothIcon,UserCircleIcon } from '@heroicons/react/24/outline';
+import { SquaresPlusIcon, ChatBubbleOvalLeftEllipsisIcon,Cog6ToothIcon,UserCircleIcon, HomeIcon } from '@heroicons/react/24/outline';
 
 
 const Sidebar = () => {
@@ -7,8 +7,23 @@ const Sidebar = () => {
     <div className="h-screen sticky top-0 border-r-2 border-blue-300">
       <div className="flex flex-col items-center gap-5 h-full py-5">
         {/* <img src={logo} alt="logo" /> */}
+
         <NavLink
-          to="/"
+          to="/home"
+          className={({ isActive }) =>
+            isActive
+              ? 'p-2 rounded-2xl bg-primary text-white cursor-pointer'
+              : 'p-2 rounded-2xl group hover:bg-primary text-blue-300 cursor-pointer transition-all'
+          }
+        >
+          <HomeIcon className="h-7 w-7 group-hover:text-white" />
+        </NavLink>
+
+
+
+
+        <NavLink
+          to="/taskDashboard"
           className={({ isActive }) =>
             isActive
               ? 'p-2 rounded-2xl bg-primary text-white cursor-pointer'
@@ -17,8 +32,10 @@ const Sidebar = () => {
         >
           <SquaresPlusIcon className="h-7 w-7 group-hover:text-white" />
         </NavLink>
+
+    
         <NavLink
-          to="/chat"
+          to="/taskDashboard/chat"
           className={({ isActive }) =>
             isActive
               ? 'p-2 rounded-2xl bg-primary text-white cursor-pointer'
@@ -28,7 +45,7 @@ const Sidebar = () => {
           <ChatBubbleOvalLeftEllipsisIcon className="h-7 w-7 group-hover:text-white " />
         </NavLink>
         <NavLink
-          to="/settings"
+          to="/taskDashboard/setting"
           className={({ isActive }) =>
             isActive
               ? 'p-2 rounded-2xl bg-primary text-white cursor-pointer'
@@ -38,7 +55,7 @@ const Sidebar = () => {
           <Cog6ToothIcon className="h-7 w-7 group-hover:text-white " />
         </NavLink>
         <NavLink
-          to="/profile"
+          to="/taskDashboard/profile"
           className={({ isActive }) =>
             isActive
               ? 'p-2 rounded-2xl bg-primary text-white cursor-pointer mt-auto'

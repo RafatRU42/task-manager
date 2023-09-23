@@ -14,6 +14,10 @@ import ResoursesLayout from "./Layout/ResoursesLayout"
 import Onboard from "./Pages/Onboard"
 import Integrate from "./Pages/Integrate"
 import ScreenLayout from "./Layout/ScreenLayout"
+import Login from "./Pages/Login"
+import SignUp from "./Pages/SignUp"
+import Chat from "./Pages/Chat"
+import Setting from "./Pages/Setting"
 
 
 
@@ -27,13 +31,15 @@ function App() {
         <Routes>
     
           {/* Main Layout */}
-          <Route path='/home' element={<MainLayout></MainLayout>}>
+          <Route path='home' element={<MainLayout></MainLayout>}>
 
             <Route index element={<Home></Home>} />
             <Route path="navbar" element={<Navbar></Navbar>} />
             <Route path="automate" element={<Automate></Automate>} />
             <Route path="views" element={<Views></Views>}></Route>
             <Route path="marketing" element={<Marketing />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signUp" element={<SignUp />} />
 
           </Route>
 
@@ -54,6 +60,9 @@ function App() {
           {/* Task Layout */}
           <Route path="taskDashboard" element={<TaskLayout></TaskLayout>}>
             <Route index element={<TaskDashboard></TaskDashboard>} />
+            <Route path="/taskDashboard/chat" element={<Chat></Chat>}/>
+            <Route path="/taskDashboard/setting" element={<Setting/>}/>
+            <Route path="/taskDashboard/profile" element={<Setting/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
