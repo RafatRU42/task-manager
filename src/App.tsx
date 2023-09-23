@@ -27,7 +27,7 @@ function App() {
         <Routes>
     
           {/* Main Layout */}
-          <Route path='/' element={<MainLayout></MainLayout>}>
+          <Route path='/home' element={<MainLayout></MainLayout>}>
 
             <Route index element={<Home></Home>} />
             <Route path="navbar" element={<Navbar></Navbar>} />
@@ -46,7 +46,7 @@ function App() {
           </Route>
 
           {/* Screen Layout */}
-          <Route path="welcome" element={<ScreenLayout></ScreenLayout>}>
+          <Route path="/" element={<ScreenLayout></ScreenLayout>}>
             <Route index element={<FirstPage></FirstPage>}></Route>
           </Route>
 
